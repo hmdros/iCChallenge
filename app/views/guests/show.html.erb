@@ -1,2 +1,12 @@
-<h1>Guests#show</h1>
-<p>Find me in app/views/guests/show.html.erb</p>
+<section class="information-show">
+  <div class="container">
+    <h1>Contacts</h1>
+    <h2>UUID:</h2>
+    <p> - <%= @information.uuid %></p>
+    <h2>URL:</h2>
+    <p> - <%= @information.url %></p>
+    <h2>Data | Hora</h2>
+    <p> - <%= @information.timestamp %></p>
+    <%= link_to 'Back to informations', informations_path %>
+  </div>
+</section>
