@@ -10,13 +10,13 @@
         </tr>
       </thead>
       <tbody>
-        <% @informations.each do |information| %>
-        <tr class="information">
-          <th scope="row"><%= information.id %></th>
-          <td><%= information.uuid %></td>
-          <td>@<%= information.url %></td>
-          <td><%= information.timestamp %></td>
-          <td><%= link_to 'Show', information %></td>
+        <% @guests.each do |guest| %>
+        <tr class="guest">
+          <th scope="row"><%= guest.id %></th>
+          <td><%= guest.uuid %></td>
+          <td>@<%= guest.url %></td>
+          <td><%= guest.timestamp %></td>
+          <td><%= link_to 'Show', guest %></td>
         </tr>
         <% end %>
       </tbody>

@@ -1,7 +1,7 @@
-const postInformation = (information) => {
-  return fetch('http://localhost:3000/informations', {
+const postGuest = (guest) => {
+  return fetch('http://localhost:3000/guests', {
     method: 'POST',
-    body: information // JSON.stringify(data), // data can be `string` or {object}!
+    body: guest // JSON.stringify(data), // data can be `string` or {object}!
   }).then (
       res => console.log(res)
   )
@@ -18,7 +18,7 @@ const generateUUID = () => {
   });
 }
 
-const createInformation = (idLocal) => {
+const createGuest = (idLocal) => {
   let uuid;
   if(idLocal){
     uuid = idLocal
@@ -40,8 +40,8 @@ const createInformation = (idLocal) => {
 const tracker = () => {
     const localUUID = localStorage.getItem('icasei-uuid')
     console.log(localUUID)
-    const information = createInformation(localUUID)
-    return postInformation(information)
+    const guest = createGuest(localUUID)
+    return postGuest(guest)
 }
 
 export { tracker };

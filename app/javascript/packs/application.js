@@ -16,5 +16,4 @@
 // const imagePath = (name) => images(name, true)
 
 import { tracker } from '../components/guest';
-
-console.log('Hello World from Webpacker')
+tracker();
