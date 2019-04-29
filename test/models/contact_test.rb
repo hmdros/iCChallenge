@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ContactTest < ActiveSupport::TestCase
   def setup
-    @contact = Contact.new(name: 'John', email: 'john@lenon.com')
+    @contact = contacts(:valid)
   end
 
   test 'Valid Contact' do
@@ -12,8 +12,8 @@ class ContactTest < ActiveSupport::TestCase
   # Should not create contact without name
   test 'Invalid without name' do
     @contact.name = nil
-    refute @contact.valid?, 'contact is valid without a name'
-    assert_not_nil @contact.errors[:name], 'no validation error for name present'
+    refute @contact.valid?, 'Contact is valid without a name'
+    assert_not_nil @contact.errors[:name], 'No validation error for name present'
   end
 
   # Should not create contact without email

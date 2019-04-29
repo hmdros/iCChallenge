@@ -2,7 +2,7 @@ require 'test_helper'
 
 class GuestTest < ActiveSupport::TestCase
   def setup
-    @guest = Guest.new(uuid: 'b30432e3-3aa7-48d1-bc98-7d69113394b8', url: 'http://localhost:3000/guests', timestamp: '27/04/2019 19:39:29')
+    @guest = guests(:valid)
   end
 
   test 'Valid Guest' do
