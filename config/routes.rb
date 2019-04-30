@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :guests, only: %i[new create index show]
-  resources :contacts, only: %i[new create show index destroy]
+  resources :guests, only: %i[new create index show destroy]
+  resources :contacts, only: %i[new create index show destroy]
 
   # get '/about', to:'home#about'
   # get '/contact', to:'contacts#new'

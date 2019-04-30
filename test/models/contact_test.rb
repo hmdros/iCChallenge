@@ -22,4 +22,11 @@ class ContactTest < ActiveSupport::TestCase
     refute @contact.valid?
     assert_not_nil @contact.errors[:email]
   end
+
+  # Should not create contact without fitting "email@example.com"
+  test 'Invalid without fitting email validation' do
+    @contact.email = 'email'
+    refute @contact.valid?
+    assert_not_nil @contact.errors[:email]
+  end
 end

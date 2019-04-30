@@ -100,6 +100,17 @@ The model for guests.
 $ rails test:models
 ```
 
+This part will test:
+The controllers for actions:
+Contacts - New, Index and Show
+Guests - Index and Show
+Home Page - Index and About
+
+```
+$ rails test:controllers
+```
+
+
 You should see in your terminal green points if the tests are okay.
 
 
