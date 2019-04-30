@@ -111,6 +111,15 @@ $ rails test:controllers
 ```
 
 
+OR
+
+To run all those 3 tests
+
+```
+$ rake
+```
+
+
 You should see in your terminal green points if the tests are okay.
 
 
