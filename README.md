@@ -18,11 +18,11 @@ Make sure you have the minimum required version of Ruby, Ruby on Rails and Postg
 
 Clone the repository:
 ```
-$ git clone git@github.com:hmdros/teste.git
+$ git clone git@github.com:hmdros/iCChallenge.git
 ```
 Open the folder you just cloned:
 ```
-$ cd teste/
+$ cd iCChallenge/
 ```
 Install all gem dependencies:
 ```
@@ -65,7 +65,7 @@ At the 'Informations' page you will see log of the latest 50's navigotion thru t
 
 ```
 ### UUID  URL Data | Hora
-1 b30432e3-3aa7-48d1-bc98-7d69113394b8  @http://localhost:3000/ 20/04/2019 10:29:34 Show
+1 b30432e3-3aa7-48d1-bc98-7d69113394b8  @http://localhost:3000/ 30/04/2019 10:29:34 Show
 ```
 
 
